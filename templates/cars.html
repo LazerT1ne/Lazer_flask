@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    List of Cars
+{% endblock %}
+
+
+{% block title %}
+    {% for car in cars %}
+        <h1>car.model_name</h1><h2>car.engine</h2><h3>car.type_of_fuel</h3>
